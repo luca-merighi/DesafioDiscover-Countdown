@@ -1,0 +1,36 @@
+.countdown-container {
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+    align-items: flex-end;
+    justify-content: center;
+
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: var(--white-transparent);
+}
+
+.countdown-container .countdown-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+}
+
+.countdown-container .colon {
+    font-size: 3rem;
+    color: var(--black);
+}
+
+.countdown-block span:first-of-type {
+    font-size: 0.60rem;
+    color: var(--text-color);
+}
+
+.countdown-block span:last-of-type {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: var(--black);
+    width: 100%;
+}

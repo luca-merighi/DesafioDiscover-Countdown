@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Luca Merighi">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/countdown-container.css">
+    <link rel="stylesheet" href="./styles/modal.css">
+    <link rel="stylesheet" href="./styles/animations.css">
+
+    <link rel="shortcut icon" href="./img/chronometer.png" type="image/x-icon">
+    <title>Countdown</title>
+</head>
+<body class="animation-appear">
+    <main id="main">
+        <h1 class="animation-down">READY TO LAUNCH IN...</h1>
+
+        <div class="countdown-container animation-left">
+            <div class="countdown-block">
+                <span>Dias</span>
+                <span class="days">00</span>
+            </div>
+            <span class="colon">:</span>
+            <div class="countdown-block"> 
+                <span>Horas</span>
+                <span class="hours">00</span>
+            </div>
+            <span class="colon">:</span>
+            <div class="countdown-block">
+                <span>Minutos</span>
+                <span class="minutes">00</span>
+            </div>
+            <span class="colon">:</span>
+            <div class="countdown-block">
+                <span>Segundos</span>
+                <span class="seconds">00</span>
+            </div>
+        </div>
+
+        <p class="animation-appear">
+            Inscreva-se para saber mais sobre o lançamento
+        </p>
+
+        <a 
+            href="#" 
+            class="modal-link animation-down">
+            Inscreva-se
+        </a>
+    </main>
+
+    <div id="modal">
+        <form>
+            <div class="close-button">
+                <div></div>
+                <div></div>
+            </div>
+            <fieldset>
+                <legend>Inscreva-se</legend>
+
+                <div class="name-input">
+                    <label for="name">
+                        Nome
+                    </label>
+                    <input 
+                    required
+                    autocomplete="off"
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Digite seu nome">
+                </div>
+
+                <div class="email-input">
+                    <label for="email">
+                        E-mail
+                    </label>
+                    <input
+                    required
+                    pattern=".+@.+\.com"
+                    autocomplete="off" 
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Digite seu e-mail">
+                </div>
+
+                <button type="button" class="button">
+                    Enviar
+                </button>
+            </fieldset>
+        </form>
+    </div>
+
+    <script src="./scripts/countdown.js"></script>
+    <script src="./scripts/modal.js"></script>
+</body>
+</html>

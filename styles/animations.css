@@ -1,0 +1,61 @@
+@keyframes up {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.animation-up {
+    animation-name: up;
+    animation-duration: 300ms;
+}
+
+@keyframes down {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.animation-down {
+    animation-name: down;
+    animation-duration: 300ms;
+}
+
+@keyframes left {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.animation-left {
+    animation-name: left;
+    animation-duration: 300ms;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.animation-appear {
+    animation-name: appear;
+    animation-duration: 500ms;
+}
